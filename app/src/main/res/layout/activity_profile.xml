@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/back_home_profile"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/left_arrow" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppiesregular"
+                android:text="Profile"
+                android:textAlignment="center"
+                android:textColor="@color/owncolor"
+                android:textSize="20dp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_gravity="center"
+            android:src="@drawable/profileii" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layoutbg"
+            android:layout_margin="25dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableLeft="@drawable/name"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/owncolor"
+                    android:textSize="16dp" />
+
+                <TextView
+
+                    android:id="@+id/surnameTextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableLeft="@drawable/surname"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/owncolor"
+                    android:textSize="16dp" />
+
+
+
+                <TextView
+                    android:id="@+id/studentNumberTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableLeft="@drawable/stuent_number"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="10dp"
+                    android:text="202065806"
+                    android:textColor="@color/owncolor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/emailTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:padding="10dp"
+                    android:text="kopanomothlaka@gmail.com"
+                    android:textColor="@color/owncolor"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

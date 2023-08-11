@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyStuffActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="7dp"
+                >
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    >
+                    <ImageView
+                        android:id="@+id/back_home_3"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/left_arrow"/>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Stuff"
+                        android:layout_gravity="center"
+                        android:textColor="@color/owncolor"
+                        android:fontFamily="@font/poppinsbold"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="20dp" />
+
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/mystuff_ill"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+                <FrameLayout
+                    android:layout_width="144dp"
+                    android:layout_height="94dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/first_corner_for_my_stuff">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/laptop_imgg"
+                        android:layout_gravity="center"/>
+
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/open_passout"
+                    android:layout_width="204dp"
+                    android:layout_height="94dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/second_coner_for_my_stuff">
+                    <TextView
+                        android:id="@+id/displayItemMystuff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HP Laptop 2020"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="13dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppinsmedium"/>
+                    <TextView
+                        android:id="@+id/displaySerialMystuff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CN78956552525"
+                        android:layout_gravity="left|center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppinsmedium"/>
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/bar_code"
+                        android:layout_gravity="bottom"/>
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

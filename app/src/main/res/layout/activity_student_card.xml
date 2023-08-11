@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StudentCardActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="7dp"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            >
+            <ImageView
+                android:id="@+id/back_home_2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/left_arrow"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Card"
+                android:layout_gravity="center"
+                android:textColor="@color/owncolor"
+                android:fontFamily="@font/poppinsbold"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/card_id"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="15dp"
+            app:cardElevation="15dp"
+            app:cardMaxElevation="17dp"
+            android:background="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="vertical">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/profile_person"
+                            android:layout_gravity="center|left"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="UNIVERSITY OF LIMPOPO"
+                            android:textColor="@color/owncolor"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:textSize="17sp"
+                            android:layout_gravity="center|top"/>
+                        <TextView
+                            android:layout_width="162dp"
+                            android:layout_height="wrap_content"
+                            android:text="Student number"
+                            android:textAlignment="center"
+                            android:background="@drawable/studentcard_bg"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/poppiesregular"
+                            android:textSize="15sp"
+                            android:padding="5dp"/>
+                        <TextView
+                            android:layout_width="162dp"
+                            android:layout_height="wrap_content"
+                            android:text="202065806"
+                            android:background="@drawable/studentcard_bg"
+                            android:layout_gravity="center|bottom"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/poppiesregular"
+                            android:textSize="15sp"
+                            android:padding="5dp"/>
+                        <ImageView
+                            android:layout_width="105dp"
+                            android:layout_height="83dp"
+                            android:src="@drawable/ul_logo"
+                            android:layout_gravity="center|right"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Turfloop Campus"
+                            android:textColor="@color/owncolor"
+                            android:fontFamily="@font/poppiesregular"
+                            android:layout_gravity="bottom|right"
+                            android:textSize="11sp"
+                            android:paddingRight="5dp"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:background="@drawable/studentcard_bg">
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="STEVEN KOPANO MOTHLAKA"
+                                android:textColor="@color/white"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/poppiesregular"
+                                android:layout_gravity="center"/>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:background="@drawable/studentcard_bg"
+                        android:layout_marginTop="5dp">
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BACHELOR SCIENCE(MATHEMATICAL SCI)"
+                                android:textColor="@color/white"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/poppiesregular"
+                                android:layout_gravity="center"/>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/code"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

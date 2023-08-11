@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View_passout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/back_home_3"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/left_arrow" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Generated Passout"
+            android:textColor="@color/owncolor"
+            android:textSize="20dp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#D8D8D8"
+        android:layout_margin="20dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="121dp"
+                android:layout_height="103dp"
+                android:src="@drawable/ul_logo"
+                android:layout_gravity="left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UNIVERSITY "
+                android:layout_gravity="top|center"
+                android:textSize="30sp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="#131609"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OF LIMPOPO "
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="#020305"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="230dp"
+            android:background="@color/owncolor"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROOF OF PERSONAL PROPERTY"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@color/owncolor"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OWNER"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppiesregular"
+                android:textColor="#020305"
+                android:textSize="13sp"
+                android:text="I am"/>
+            <TextView
+                android:id="@+id/displayname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/owncolor"
+                android:textSize="13sp"
+                android:layout_marginLeft="35dp"
+                android:text=""/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppiesregular"
+                android:textColor="#020305"
+                android:textSize="13sp"
+                android:text="Hereby declare that i am the right owner of the undermentioned items which i intend taking into University premises."/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="170dp"
+            android:background="@color/owncolor"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DESCRIPTION OF ITEM"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item name : "
+                android:textColor="#020305"
+                android:fontFamily="@font/poppiesregular"
+                android:layout_gravity="left"/>
+            <TextView
+                android:id="@+id/displayItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:layout_marginLeft="90dp"
+                android:textColor="@color/owncolor"
+                android:fontFamily="@font/poppinsbold"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serial number : "
+                android:textColor="#020305"
+                android:fontFamily="@font/poppiesregular"
+                android:layout_gravity="left"/>
+            <TextView
+                android:id="@+id/displaySerial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:layout_marginLeft="107dp"
+                android:textColor="@color/owncolor"
+                android:fontFamily="@font/poppinsbold"/>
+
+        </FrameLayout>
+
+
+
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/takeMeHome"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="DONE"/>
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+     <item
+         android:icon="@drawable/profile_person"
+         android:title="Profile"
+         android:textColor="@color/nav_item_color"
+         android:id="@+id/profile"
+         android:layout_width="@dimen/icon_size"
+         android:layout_height="@dimen/icon_size"
+         />
+    <item android:id="@+id/shareApp"
+        android:title="Share"
+        android:textColor="@color/nav_item_color"
+        android:icon="@drawable/share"/>
+
+    <item android:id="@+id/logOUt"
+        android:title="LogOut"
+        android:textColor="@color/nav_item_color"
+        android:icon="@drawable/logout"/>
+
+</menu>

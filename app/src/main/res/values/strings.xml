@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Student Solution</string>
+    <string name="drawer_open" />
+    <string name="drawer_close" />
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+    <color name="my_button_color">#A84CB8</color>
+
+
+</resources>

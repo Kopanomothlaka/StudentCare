@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PassOutActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="0dp"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+
+                        android:id="@+id/back_home"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:src="@drawable/left_arrow" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Generate PassOut"
+                        android:layout_gravity="center"
+                        android:textColor="@color/owncolor"
+                        android:fontFamily="@font/poppinsbold"
+                        android:textAlignment="center"
+                        android:textSize="20dp" />
+
+                </FrameLayout>
+
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="292dp"
+                android:src="@drawable/pass_out_illustrator"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="15dp">
+
+                <EditText
+                    android:id="@+id/Item"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:drawableLeft="@drawable/serial_icon"
+                    android:padding="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="Item name "
+                    android:textColorHint="@color/owncolor"
+                    android:textColor="@color/owncolor"
+                    android:textAlignment="textStart"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="20dp"/>
+                <EditText
+                    android:id="@+id/surnameId"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:drawableLeft="@drawable/serial_icon"
+                    android:padding="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="Serial number "
+                    android:textColorHint="@color/owncolor"
+                    android:textColor="@color/owncolor"
+                    android:textAlignment="textStart"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:id="@+id/institutionId"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:drawableLeft="@drawable/address_icon"
+                    android:padding="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="Student address "
+                    android:textColorHint="@color/owncolor"
+                    android:textColor="@color/owncolor"
+                    android:textAlignment="textStart"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="20dp"/>
+                <Button
+
+                    android:id="@+id/ge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:text="Generate"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
