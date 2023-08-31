@@ -101,9 +101,10 @@
                             android:textSize="15sp"
                             android:padding="5dp"/>
                         <TextView
+                            android:id="@+id/studentNumberView"
                             android:layout_width="162dp"
                             android:layout_height="wrap_content"
-                            android:text="202065806"
+                            android:text="*******"
                             android:background="@drawable/studentcard_bg"
                             android:layout_gravity="center|bottom"
                             android:layout_marginTop="12dp"
@@ -144,9 +145,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
                             <TextView
+                                android:id="@+id/nameView"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="STEVEN KOPANO MOTHLAKA"
+                                android:text="*****************************"
                                 android:textColor="@color/white"
                                 android:textAlignment="center"
                                 android:fontFamily="@font/poppiesregular"
@@ -164,9 +166,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
                             <TextView
+                                android:id="@+id/idcourse"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="BACHELOR SCIENCE(MATHEMATICAL SCI)"
+                                android:text="*******************************"
                                 android:textColor="@color/white"
                                 android:textAlignment="center"
                                 android:fontFamily="@font/poppiesregular"

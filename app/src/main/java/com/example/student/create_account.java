@@ -30,7 +30,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class create_account extends AppCompatActivity {
-    private EditText etName, etSurname , etInstitution , etStudentNumber , etEmail ,etPassword ,etConfirmPAssword;
+    private EditText etName,etInstitution , etStudentNumber ,etcourse, etEmail ,etPassword ,etConfirmPAssword;
     private Button createAccountbtn;
     private TextView loginText;
     private ProgressDialog progressDialog;
@@ -47,9 +47,9 @@ public class create_account extends AppCompatActivity {
         // initialising all the views
         mAuth = FirebaseAuth.getInstance();
         etName = findViewById(R.id.nameId);
-        etSurname = findViewById(R.id.surnameId);
         etInstitution = findViewById(R.id.institutionId);
         etStudentNumber = findViewById(R.id.studentId);
+        etcourse=findViewById(R.id.courseId);
         etEmail = findViewById(R.id.emailId);
         etPassword= findViewById(R.id.passwordId);
         etConfirmPAssword= findViewById(R.id.confirmpasswordId);
@@ -83,9 +83,9 @@ public class create_account extends AppCompatActivity {
 
         //take the editText values to string
         String name = etName.getText().toString();
-        String surname= etSurname.getText().toString();
         String varsity = etInstitution.getText().toString();
         String studentNUmber = etStudentNumber.getText().toString();
+        String course =etcourse.getText().toString();
         String email = etEmail.getText().toString();
         String password = etPassword.getText().toString();
         String confirmPassword = etConfirmPAssword.getText().toString();
@@ -101,17 +101,6 @@ public class create_account extends AppCompatActivity {
         else if (name.matches("[a-zA-Z]")) {
             etName.requestFocus();
             etName.setError("Enter only alphabetical characters");
-            return;
-        }
-        else if (surname.length()==0) {
-            etSurname.requestFocus();
-            etSurname.setError("Enter your surname !");
-            return;
-
-        }
-        else if (surname.matches("[a-zA-Z]")) {
-            etSurname.requestFocus();
-            etSurname.setError("Enter only alphabetical characters");
             return;
 
         }
@@ -132,7 +121,17 @@ public class create_account extends AppCompatActivity {
             etStudentNumber.setError("Enter student NUmber");
             return;
 
-        } else if (email.isEmpty()) {
+        } if (course.length()==0){
+            etName.requestFocus();
+            etName.setError("Enter course you are doing  !");
+            return;
+        }
+        else if (course.matches("[a-zA-Z]")) {
+            etName.requestFocus();
+            etName.setError("Enter only alphabetical characters");
+            return;
+        }
+        else if (email.isEmpty()) {
             etEmail.requestFocus();
             etEmail.setError("Enter Email");
             return;
@@ -184,7 +183,7 @@ public class create_account extends AppCompatActivity {
                     if(task.isSuccessful()){
 
                         String userId = mAuth.getCurrentUser().getUid();
-                        storeUserDataInFirestore(userId, name,surname,varsity,studentNUmber, email);
+                        storeUserDataInFirestore(userId, name,varsity,studentNUmber,course, email);
 
                         //take to main activity
                         Intent mainActivity = new Intent(create_account.this,nav.class);
@@ -205,14 +204,14 @@ public class create_account extends AppCompatActivity {
 
     }
 
-    private void storeUserDataInFirestore(String userId, String name,String surname,String varsity,String studentNUmber, String email) {
+    private void storeUserDataInFirestore(String userId, String name,String varsity,String studentNUmber,String course, String email) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         // Create a Map to store user data
         Map<String, Object> userMap = new HashMap<>();
         userMap.put("name", name);
-        userMap.put("surname",surname);
         userMap.put("varsity",varsity);
         userMap.put("studentNumber",studentNUmber);
+        userMap.put("course",course);
         userMap.put("email", email);
 
         // Reference to the "users" collection in Firestore

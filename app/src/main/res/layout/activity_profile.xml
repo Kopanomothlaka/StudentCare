@@ -70,12 +70,12 @@
 
                 <TextView
 
-                    android:id="@+id/surnameTextview"
+                    android:id="@+id/courseTextview"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/edittext_bg"
-                    android:drawableLeft="@drawable/surname"
+                    android:drawableLeft="@drawable/course"
                     android:drawablePadding="10dp"
                     android:fontFamily="@font/poppinsmedium"
                     android:padding="10dp"

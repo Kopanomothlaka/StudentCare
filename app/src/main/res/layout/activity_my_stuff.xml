@@ -80,7 +80,7 @@
                         android:id="@+id/displayItemMystuff"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="HP Laptop 2020"
+                        android:text=" "
                         android:layout_gravity="left"
                         android:layout_marginTop="13dp"
                         android:textColor="@color/white"
@@ -89,7 +89,7 @@
                         android:id="@+id/displaySerialMystuff"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="CN78956552525"
+                        android:text=" "
                         android:layout_gravity="left|center"
                         android:textColor="@color/white"
                         android:fontFamily="@font/poppinsmedium"/>

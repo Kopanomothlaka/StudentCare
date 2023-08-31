@@ -25,7 +25,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     private ImageView back;
     ProgressDialog progressDialog;
-    private TextView nameTextView,surnameTextview, emailTextView,  studentNumberTextView;
+    private TextView nameTextView,courseTextview, emailTextView,  studentNumberTextView;
 
 
     @Override
@@ -47,7 +47,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         // Initialize your TextViews
         nameTextView = findViewById(R.id.nameTextView);
-        surnameTextview=findViewById(R.id.surnameTextview);
+        courseTextview=findViewById(R.id.courseTextview);
         emailTextView = findViewById(R.id.emailTextView);
         studentNumberTextView = findViewById(R.id.studentNumberTextView);
 
@@ -78,13 +78,13 @@ public class ProfileActivity extends AppCompatActivity {
                             Log.d("ProfileActivity", "Document exists");
                             // Retrieve user data
                             String name = document.getString("name");
-                            String surname = document.getString("surname");
+                            String course = document.getString("course");
                             String email = document.getString("email");
                             String studentNumber = document.getString("studentNumber");
 
                             // Populate TextViews with user data
                             nameTextView.setText(name);
-                            surnameTextview.setText(surname);
+                            courseTextview.setText(course);
                             emailTextView.setText(email);
                             studentNumberTextView.setText(studentNumber);
                             progressDialog.dismiss();
